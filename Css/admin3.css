@@ -1,0 +1,769 @@
+@import url('https://fonts.googleapis.com/css2?family=Adamina&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Adamina", serif;
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F9F9F9;
+    height: 99vh;
+}
+
+.general_todo{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
+    /* border: 1px solid greenyellow; */
+}
+
+.conheader {
+    /* border: 1px solid red; */
+    width: 90%;
+    height: 15%;
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(../Img/corner-4.png);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.logo{
+    width: 30%;
+    height: 100%;
+    display: flex;
+}
+
+.img_logo{
+
+    background-image: url(../Img/logo.png);
+    width: 20%;
+    height: 60%;
+    background-size: 100% 100%;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+.letras_logo{
+    width: 50%;
+    height: 100%;
+    margin-left: -6%;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    font-family: "Adamina", serif;
+    font-style: normal;
+    font-size: 130%;
+}
+
+.datos_barra{
+    width: 30%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.img_notificaion
+{
+    width: 15%;
+    height: 60%;
+    background-image: url(../Img/alarma.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+
+.img_usuario{
+    width: 15%;
+    height: 60%;
+
+    background-image: url(../Img/usuarios-50.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+
+.congeneral {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    /* border-radius: 10px; */
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+
+.con_menu {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-image: url(../Img/authentication-corner.png);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    /* border: 1px solid blue; */
+}
+
+.cont_menu_sub{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+.inicio{
+    /* border: 1px solid fuchsia; */
+    width: 100%;
+    height: 15%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex: none;
+
+}
+
+.con_imagen img{
+    /* border: 1px solid rebeccapurple; */
+    display: flex;
+    width: 80%;
+    height: 80%;
+    background-size: 100% 100%;
+}
+
+.con_opcion{
+    /* border: 1px solid black; */
+    width: 50%;
+    height: 30%;
+    text-align: center;
+    align-items: center;
+  
+}
+
+
+.secion1{
+    display: flex;
+    flex: none;
+}
+.seci_notificaiones{
+    width: 50%;
+    color: #8d8d8d;
+    
+
+}
+h2{
+    font-size: 60%;
+}
+h4{
+    font-size: 70%;
+    /* justify-self: flex-end; */
+}
+.linecita{
+    width: 50%;
+    height: 30%;
+   margin-top: 4.8%;
+}
+
+.con_menu a {
+    text-decoration: none; 
+    color: inherit; 
+    display: block; 
+}
+.icono_menu{
+    margin-left: 4%;
+}
+.icono_menu img {
+    width: 10%;
+    height: 10%;
+}
+.select{
+    width: 100%;
+    border: none;
+    outline: none;
+    appearance: none;
+    background-color: blue;
+}
+
+/*----------------------------------------  estilos contenedor formulario -------------------------------------*/
+
+main {
+    height: 100%;
+    width: 76%;
+    display: flex;
+    flex-direction: column; 
+    overflow: hidden;
+    /* border: 1px solid green; */
+}
+
+.contain_main{
+    /* border: 1px solid fuchsia; */
+    width: 100%;
+    height: 100%; 
+    flex: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;            
+    justify-content: space-around;
+}
+
+
+/*estilos notificaciones */
+
+
+.cont_titulo {
+    /* border: 1px solid blueviolet; */
+    width: 98%;
+    height: 15%;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    background-image: url(../Img/corner-4.png);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    padding-left: 1%;
+    justify-content: space-between;
+}
+
+.cont_titulo p{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.search-container{
+    /* border: 1px solid red; */
+    width: 30%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.search-container input{
+    background-color: #D9D9D9;
+    height: 35%;
+    width: 80%;
+    border-radius: 15px;
+    border: transparent;
+    padding-left: 3%;
+}
+
+.cont_general_all{
+    /* border: 1px solid greenyellow; */
+    width: 98%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    align-items: center;
+    background-image: url(../Img/corner-7.png);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    background-size: calc(100%)calc(100%);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    justify-content: center;
+}
+
+
+/* ------------------------- MENU ------------------------------------------- */
+
+.mainmain{
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-image: url(../Img/corner-7.png);
+    background-size: calc(100%)calc(100%);
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.maincon{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 25%;
+    /* height: 33%;  */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.mainmenu{
+    border: 1px solid black;
+    width: 13%;
+    height: 80%;
+    /* height: 60%; */
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}   
+
+/* -------------------REGISTRAR MEDICOS------------------ */
+
+.survey-container{
+    /* padding-top: 5%; */
+    /* border: 1px solid blue; */
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: calc(1%);
+    padding-left: 2%;
+    align-items: center;
+    justify-content: center;
+}
+.question{
+    /* border: 1px solid; */
+    height: 11%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.question label{
+    width: 40%;
+    /* border: 1px solid; */
+    font-size: 110%;
+}
+.question input{
+    background-color: #D9D9D9;
+    height: 50%;
+    width: 60%;
+    border-radius: 15px;
+    border: transparent;
+    padding-left: 3%;
+}
+.save{
+    /* border: 1px solid red; */
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.save-button{
+    /* border: 1px solid blue; */
+    height: 60%;
+    width: 25%;
+    background-color: rgba(61, 132, 180, 0.856);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.save-button:hover{
+    cursor: pointer;
+}
+.save-button a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* ---------------PANEL MEDICOS------------------- */
+
+.panel-main{
+    /* border: 1px solid fuchsia; */
+    display: flex;
+    width: 100%;
+    height: 90%;
+    overflow: auto;
+}
+table{
+    /* border: 1px solid red; */
+    width: 100%;
+    /* height: 99%; */
+    text-align: left;
+    justify-self: flex-end;
+    border-collapse: collapse;
+    align-self: flex-start;
+}
+table th{
+    /* border: 1px solid black; */
+    font-size: larger;
+    padding: 8px;
+    text-align: left;
+    background-color: #dddddd3f; /* Light grey on hover */
+}
+table td{
+    /* border: 1px solid black; */
+    font-size: medium;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 8px;
+    text-align: left;
+}
+table tr{
+    justify-content: center;
+    text-align: center;
+    height: 30px;
+}
+
+tr:hover {
+    background-color: #dddddd3f; /* Light grey on hover */
+}
+
+table button{
+    background-color: rgba(61, 132, 180, 0.856);
+    border: transparent;
+    border-radius: 15px;
+    width: 60%;
+    color: #ffffff;
+    font-size: large;
+    cursor: pointer;
+}
+
+/* ----------------register paciente--------------------- */
+
+.pat-survey-container{
+    /* border: 1px solid green; */
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: calc(1%);
+}
+.pat-question{
+    /* border: 1px solid; */
+    height: 11%;
+    display: flex;
+    align-items: center;
+}
+
+.pat-question label{
+    width: 40%;
+    font-size: 110%;
+    /* border: 1px solid blueviolet; */
+}
+
+.pat-question input{
+    background-color: #D9D9D9;
+    height: 50%;
+    width: 60%;
+    border-radius: 15px;
+    border: transparent;
+    padding-left: 3%;
+}
+
+.pat-question select{
+    background-color: #D9D9D9;
+    height: 50%;
+    width: 60%;
+    border-radius: 15px;
+    border: transparent;
+    padding-left: 3%;
+}
+
+.save-patient{
+    /* border: 1px solid fuchsia; */
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+.save-pat-button{
+    /* border: 1px solid blue; */
+    height: 60%;
+    width: 25%;
+    background-color: rgba(61, 132, 180, 0.856);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.save-pat-button:hover{
+    cursor: pointer;
+}
+.save-pat-button a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* ----------------PATIENT PANEL----------------- */
+
+.patient-main{
+    /* border: 1px solid fuchsia; */
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+/* -------------------------------------------------- MODAL -------------------------------------------- */
+
+.modal{
+    border: 1px solid;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 0.2s ease-in-out;
+    border-radius: 15px;
+    z-index: 10;
+    background-color: #F5F5F5;
+    width: 40%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal.active{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header{
+    display: flex;
+    border-bottom: 1px solid;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2%;
+    /* border: 1px solid red; */
+}
+
+.modal-header span{
+    font-size: x-large;
+    font-weight: bold;
+    color: rgba(61, 132, 180, 0.856);
+}
+
+.modal-header .close-button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: xx-large;
+}
+
+.modal-body{
+    padding: 2%;
+    /* border: 1px solid blue; */
+}
+
+#overlay{
+    /* border: 1px solid blue; */
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    pointer-events: none;
+    transition: 0.2s ease-in-out;
+}
+
+#overlay.active{
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* ---------------------------- MODAL CONTENT -------------------------*/
+
+.modal-body{
+    /* border: 1px solid black; */
+    height: 100%;
+}
+
+.modal-savebutton{
+    /* border: 1px solid red; */
+    height: 9%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-savebutton button{
+    background-color: rgba(61, 132, 180, 0.856);
+    border-radius: 15px;
+    width: 30%;
+    border: transparent;
+    height: 55%;
+    color: #ffffff;
+    font-size:small;
+}
+
+.edit-modal{
+    /* border: 1px solid red; */
+    display: flex;
+    width: 100%;
+    height: 10%;
+    align-items: center;
+    gap: 3%;
+}
+
+.edit-modal input{
+    background-color: #D9D9D9;
+    height: 50%;
+    width: 40%;
+    border-radius: 15px;
+    border: transparent;
+    padding-left: 3%;
+    justify-self: end;
+}
+
+.edit-modal select{
+    background-color: #D9D9D9;
+    height: 50%;
+    width: 40%;
+    border-radius: 15px;
+    border: transparent;
+    padding-left: 3%;
+}
+
+/* -------------------------ADD CITA-------------------------------- */
+
+.separar{
+    width: 100%;
+    height: 3%;
+}
+.preguntas_formulario{
+    width: 100%;
+    height: 17%;
+  
+    display: flex;
+    justify-content: space-between;
+}
+
+.preguntas_formularioo{
+    width: 100%;
+    height: 17%;
+  
+    display: flex;
+    justify-content: space-between;
+}
+
+.cont_preguntas{
+    width: 33%;
+    height: 100%;
+    /* border: 1px solid red; */
+}
+
+.cont_preguntas_search{
+    /* border: 1px solid green; */
+    width: 33%;
+    height: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.search{
+    /* border: 1px solid blue; */
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-self: flex-end;
+}
+
+.search-img{
+    height:40%;
+    width: 10%;
+    background-size: 100% 100%;
+    background-image: url(../Img/search.png);
+    /* border: 1px solid; */
+    align-items: center;
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    background-position: center;
+    border: transparent;
+}
+
+.search-img:hover{
+    cursor: pointer;
+}
+
+.cont_preguntas {
+    margin-bottom: 20px; 
+}
+
+.cont_preguntas label {
+    display: block;
+    margin-bottom: 5px; /* Espacio entre el label y el input */
+    font-weight: bold;
+    margin-left: 5%;
+    font-size: 80%;
+}
+
+.cont_preguntas_search label {
+    display: block;
+    margin-bottom: 5px; /* Espacio entre el label y el input */
+    font-weight: bold;
+    margin-left: 5%;
+    font-size: 80%;
+}
+
+.cont_preguntas input {
+    width: 80%;
+    height: 40%;
+    padding: 8px; /* Ajusta el espacio dentro del input */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    box-sizing: border-box; /* Garantiza que el tamaño total sea correcto */
+    margin-left: 3%;
+}
+
+.cont_preguntas_search input {
+    width: 80%;
+    height: 40%;
+    padding: 8px; /* Ajusta el espacio dentro del input */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    box-sizing: border-box; /* Garantiza que el tamaño total sea correcto */
+    margin-left: 3%;
+}
+
+.cont_preguntas select, input[type="time"] {
+    width: 80%; /* Ancho del campo de entrada */
+    height: 40%; /* Altura del campo de entrada */
+    padding: 5px; /* Ajusta el espacio dentro del input */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+   font-size: 70%;
+    margin-left: 6%; /* Espacio a la izquierda */
+}
+
+
+.cont_preguntas-search, .cont_preguntas img {
+    width: 60%px; /* Ancho deseado */
+    height: 50%; /* Altura ajustada automáticamente para mantener la proporción */
+    margin-left: 15%;
+}
+
+
+
+.con_opcion select {
+    width: 100%; /* Ancho del campo de entrada */
+    height: 100%; /* Altura del campo de entrada */
+   
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    font-size: 70%;
+    margin-left: 50%; /* Espacio a la izquierda */
+}

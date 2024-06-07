@@ -1,0 +1,770 @@
+@import url('https://fonts.googleapis.com/css2?family=Adamina&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Adamina", serif;
+}
+
+body {
+    height: 99vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F9F9F9;
+
+}
+
+.conheader {
+    width: 92%;
+    height: 17%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F9F9F9;
+    /* box-shadow: rgba(17, 17, 26, 0.1) 0 10px 10px -10px; */
+    /* box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5); */
+}
+#toggleMenu, #closemenu{
+    display: none;
+}
+.logo{
+    width: 22%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.img_logo{
+    width: 25%;
+    height: 52%;
+    background-image: url(../Img/logo.png);
+    background-size: calc(100%)calc(100%);
+}
+
+.letras_logo{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150%;
+}
+
+.datos_barra{
+    width: 24%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.name{
+    width: 80%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.name p{
+    width: 60%;
+    font-size: 110%;
+}
+.img_notificaion
+{  
+    width: 16%;
+    height: 68%;
+    background-image: url(../Img/notification.png);
+    background-size: calc(100%)calc(100%);
+    background-repeat: no-repeat;
+
+}
+
+
+.img_usuario{
+    width: 18%;
+    height: 43%;
+    background-image: url(../Img/profile-user_64572.png);
+    background-size: calc(100%)calc(100%);
+    background-repeat: no-repeat;
+
+}
+.congeneral{
+    width: 92%;
+    height: 84%;
+    display: flex;
+}
+
+/*--------------barra lateral ----------------*/
+.con_menu{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 100%;
+    box-shadow: 10px 0 10px -10px rgba(0, 0, 0, 0.5);
+}
+.inicio{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 17%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.49);
+}
+.inicio a{
+    display: flex;
+    align-items: end;
+    width: 100%;
+    height: 90%;
+    text-decoration: none;
+    color: black;
+}
+.con_imagen{
+    width:12%;
+    height: 34%;
+    background-image: url(../Img/home.png);
+    background-size: calc(100%)calc(100%);
+
+}
+.enunciado{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 40%;
+    width: 25%;
+
+}
+.notificaciones{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 84%;
+    height: 8%;
+    width: 90%;
+
+}
+.notificaciones p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.49);
+}
+.linea{
+    width: 38%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.linea p{
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.49);
+}
+.combo1_notificacion{
+    display: flex;
+    width: 100%;
+    height: 12%;
+}
+.combo1_notificacion a{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+    text-decoration: none;
+    color: black;
+}
+
+.combo1_notificacion .con_imagen2{
+    width:12%;
+    height: 47%;
+    background-image: url(../Img/notification.png);
+    background-size: calc(100%)calc(100%);
+}
+
+.combo1_notificacion .con_imagen3{
+    width:12%;
+    height: 47%;
+    background-image: url(../Img/historiaclinica.png);
+    background-size: calc(100%)calc(100%);
+}
+
+.menu-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.menu-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    cursor: pointer;
+}
+.combo1_notificacion .con_imagen4{
+    width:16%;
+    height: 60%;
+    background-image: url(../Img/cita1.png);
+    background-size: calc(100%)calc(100%);
+}
+
+.menu-title .enunciado2{
+    display: flex;
+    align-items: center;
+    
+    height: 58%;
+    width: 75%;
+}
+.menu-title i {
+    font-size: 120%;
+}
+
+
+.submenu {
+    list-style: none;
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 90%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.submenu li a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.submenu li a:hover {
+    background-color: #f4f4f4;
+}
+
+.menu-item:hover .submenu {
+    display: block;
+}
+.close_sesion{
+    display: flex;
+    align-items: end;
+    height: 15%;
+}
+
+.close_sesion i{
+    font-size: 120%;
+}
+.close_sesion a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.texto_sesion{
+    display: flex;
+    width: 100%;
+}
+.texto_sesion p{
+    display: flex;
+    justify-content: end;
+    width: 40%;
+}
+
+/* ---------------------contenido principal ------------*/
+main{
+    width: 100%;
+   background-color: #F2F3F5;
+}
+
+
+.historialcita{
+   display: flex;
+   flex-direction: column;
+   align-items: end;
+   justify-content: space-around;
+   height: 100%;
+  /* background-color: #f4f7fb;*/
+
+}
+
+
+/*estilos notificaciones */
+
+
+.cont_titulo {
+    height: 13%;
+    width: 95%;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    background-image: url(../Img/corner-4.png);
+    box-shadow: 6px 0 16px 0 rgba(136, 165, 191, 0.48), 0 0 0 0 rgba(255, 255, 255, 0.8);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+.cont_titulo p{
+    display: flex;
+    margin-left: 2%;
+    font-size: 140%;
+    color: rgba(0, 0, 0, 0.61);
+}
+.cont_general_all{
+    width: 95%;
+    height: 80%;
+    border-radius: 10px;
+    align-items: center;
+    background-image: url(../Img/corner-7.png);
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    background-size: calc(100%)calc(100%);
+    background-repeat: no-repeat; 
+    background-color: white;
+}
+
+.preguntas_formulario{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 19%;
+}
+.cont_preguntas{
+    width: 32%;
+    height:73%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+form{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.preguntas_formulario2{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 26%;
+}
+.cont_preguntas2{
+    width: 32%;
+    height:73%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cont_preguntas3{
+    width: 19%;
+    height:73%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+input, select{
+    width: 80%;
+    height: 55%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+    padding-left: 4%;
+}
+.cont_preguntas3_add{
+    width: 19%;
+    height:73%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.cont_preguntas3_add .img{
+    width: 25%;
+    height: 100%;
+    background-image: url(../Img/logo.png);
+    background-size: calc(100%)calc(100%);
+}
+.cont_enviar{
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cont_enviar button{
+    width: 10%;
+    height: 55%;
+    border-radius: 10px;
+    background-color: #10AE16; 
+    cursor: pointer; 
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 95%;
+    letter-spacing: 0.5px;
+}
+.logo label i{
+    display: none;
+}
+/*-------------contenido de historia clinica -------------------------*/
+
+.cont_general_all2{
+    width: 95%;
+    height: 80%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    background-image: url(../Img/corner-7.png);
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    background-size: calc(100%)calc(100%);
+    background-repeat: no-repeat; 
+    background-color: white;
+}
+.cont2_elegir{
+    display: flex;
+    width: 90%;
+    height: 15%;
+    }
+
+.cont2_elegir h4{
+    width: 35%;
+    display: flex;
+    align-items: center;
+}
+.comb{
+    display: flex;
+    width: 25%;
+    align-items:center ;
+}
+.comb p{
+    width: 98%;
+    display: flex;
+    align-items: end;
+}
+#radio, #radio1{
+    height: 35%;
+    width: 20%;
+    box-shadow: none;
+}
+
+.historial_clinico{
+    /* border: 1px solid; */
+    width: 95%;
+    height: 100%;
+    background-color: #fafafa; 
+    /*backdrop-filter: blur(1px); /* Ajusta el valor de blur según desees */
+    /* opacity: 0.5;  */
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    /* background-color: rgba(128, 128, 128, 0.5);  */
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cont_logo_name{
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    height: 35%;
+    width: 20%;
+}
+.cont_logo_name p{
+    height: 70%;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 110%;
+}
+.img_log{
+    width: 30%;
+    height: 75%;
+    background-image: url(../Img/logo.png);
+    background-size: calc(100%)calc(100%);
+}
+.nit{
+    color:#10AE16;
+    font-size: 90%;
+    height: 10%;
+}
+.datos_historia{
+    width: 99%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    font-size: 90%;
+}
+.title{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 90%;
+    height: 15%;
+    width: 95%;
+    background-color: #f2f2f2;
+
+}
+.general{
+    display: flex;
+    height: 50%;
+    width: 95%;
+    font-size: 95%;
+}
+.container1{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.cont-1{
+    display: flex;
+    height: 100%;
+    margin-bottom: 1%;
+}
+.negrita{
+    width: 36%;
+    font-weight: bold;
+}
+.afil{
+    width: 95%;
+    height: 40%;
+
+}
+.afi{
+    font-weight: bold;
+    width: 25%;
+}
+.cont-2{
+    display: flex;
+    font-size: 95%;
+    height: 50%;
+    align-items: center;
+}
+.title2{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    height: 50%;
+    font-size: 90%;
+    background-color: #f2f2f2;
+}
+.descripcion_paciente{
+    height: 20%;
+    width: 95%;
+}
+.negrita2{
+    width: 36%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+.negrita_grave{
+    font-weight: bold;
+    display: flex;
+    width: 45%;
+}
+.cont_gravedad{
+    width: 50%;
+    display: flex;
+    height: 15%;
+    margin-bottom: 1%;
+}
+.demas{
+    font-size: 90%;
+}
+/* Estilos del Alerta tanto para agendar como para eliminar*/
+.custom-alert {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 2.5%;
+    border-radius: 5%;
+    box-shadow: 0 0 3% rgba(0, 0, 0, 0.2);
+    max-width: 80%; /* Ancho máximo ajustado a un porcentaje */
+    width: 50%; /* Ancho ajustado a un porcentaje */
+    text-align: center;
+}
+#alert-message, #alert-title{
+    margin:2%;
+}
+.alert-content {
+    margin-bottom: 5%;
+    text-align: center;
+    font-size: 110%;
+}
+
+#close-alert {
+    margin-top: 2%;
+    padding:2%;
+    background-color: #10AE16;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 105%;
+}
+
+#close-alert:hover {
+    background-color: #1acd81;
+}
+/*------------------tabla estado cita-----------------------*/
+.cont_general_all {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 20px;
+
+}
+
+.tabla th, .tabla td {
+    padding: 8px;
+    text-align: left;
+}
+td{
+    border: 1px solid ;
+    border-radius: 20px;
+
+}
+.tabla th {
+    background-color: #f2f2f2;
+}
+.no-citas p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+@media (max-width: 768px)  {
+    .conheader{
+        height: 15%;
+        width: 100%;
+    }
+   
+    .logo{
+        width: 52%;
+        justify-content: end;
+    }
+    .img_logo{
+        display: none;
+    }
+    .logo label i{
+        display: flex;
+        font-size: 175%;
+
+    }
+    .con_menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width:70%;
+        height: 100%;
+        background-color: #F9F9F9;
+        transition: transform 0.3s ease;
+        transform: translateX(-100%);
+        z-index: 1000; /* Asegúrate de que el menú esté sobre otros elementos */
+
+    }
+    #toggleMenu{
+        width: 100%;
+        height: 100%;
+    }
+  
+    .con_menu.menu-abierto {
+        display: flex;
+        transform: translateX(0);
+    }
+
+    .check-boton {
+        cursor: pointer;
+        height: 9%;
+        width: 18%;
+        display: flex;
+        align-items: end;
+        justify-content: end;
+    }
+
+    #toggleMenu:checked + .con_menu {
+        transform: translateX(0);
+        
+    }
+   
+    #closemenu{
+        display: flex;
+    }
+    .fa-xmark {
+        cursor: pointer;
+        font-size: 2em;
+        color: black;
+    }
+    .inicio{
+        height: 15%;
+    }
+    .inicio a{
+        justify-content: center;
+    }
+    .combo1_notificacion a{
+        justify-content: center;
+
+    }
+    .menu-title .enunciado2{
+        width: 30%;
+    }
+    .letras_logo{
+        width: 80%;
+        font-size: 118%;
+    } 
+    .datos_barra{
+        width: 35%;
+        justify-content: space-between;
+    }
+    .name{
+        width: 90%;
+    }
+    .img_notificaion{
+        width: 50%;
+        height: 90%;
+        background-image: url(../Img/logo.png);
+        background-size: calc(100%)calc(100%);
+    }
+    .img_usuario{
+        display: none;
+    }
+   .notificaciones p{
+    width: 80%;
+
+   }
+
+   .congeneral{
+    width: 95%;
+   }
+    .cont_general_all{
+        width: 100%;
+    }
+    .cont_titulo{
+        width: 100%;
+    }
+    .cont_titulo p{
+        width: 40%;
+        font-size: 120%;
+    }
+    .cont_preguntas p{
+        font-size: 90%;
+    }
+    .tabla {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .tabla th, .tabla td {
+        font-size: 14px; /* Reduce el tamaño de fuente en dispositivos más pequeños */
+    }
+}

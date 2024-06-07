@@ -1,0 +1,1147 @@
+@import url('https://fonts.googleapis.com/css2?family=Adamina&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+ /*   font-family: "Adamina", serif;*/
+}
+    
+/* PRINCIPAL 
+
+.adamina-regular {
+  font-family: "Adamina", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+*/
+
+body {
+    height: 97vh;
+}
+
+header{
+    height:73%;
+    display: flex;
+    flex-direction: column;
+}
+nav{
+    height: 15%;
+    display: flex;
+}
+.cont-logo_name{
+    width: 45%;
+    display: flex;
+}
+.logo{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.logo i{
+    background-image: url(../Img/logo.jpeg);
+    width: 20%;
+    height: 60%;
+    background-size: calc(100%)calc(100%);
+}
+.logo p {
+    width: 63%;
+    font-size: 135%;
+    font-weight:bold;
+    background: linear-gradient(to right, #006400, #8FBC8F);
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+#check {
+    display: none;
+}
+
+label {
+    display: none;
+    font-size: 25px;
+    float: right;
+}
+
+label:hover {
+    cursor: pointer;
+}
+.opciones{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.opciones a{
+    font-size: 135%;
+    color: black;
+    text-decoration: none;   
+}
+.opciones .sesion{
+    height: 50%;
+    width: 20%;
+    background-color: #83EB72;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.container_verde{
+    display: flex;
+    height:  85%;
+    border: 1px solid green;
+    border-radius: 0 0 500px 500px;
+    background-color:rgba(27, 193, 0, 1);
+    border: none;
+    outline: none;
+}
+.cont_doctores{
+  width: 50%;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+.acomodar3 {
+    height: 50%;
+    width: 7%;
+    display: flex;
+    justify-content: center;
+}
+.cont_doctores .acomodar3 .plus3{
+    background-image: url(../Img/plus.png);
+    width: 100%;
+    height:17%;
+    background-size: calc(100%)calc(100%); 
+}
+.acomodar2 {
+    height: 90%;
+    width: 7%;
+    display: flex;
+    justify-content: center;
+}
+.cont_doctores .acomodar2 .plus2{
+    background-image: url(../Img/plus.png);
+    width: 100%;
+    height:10%;
+    background-size: calc(100%)calc(100%); 
+}
+.cont_doctores .img{
+    background-image: url(../Img/doctores.png);
+    width: 60%;
+    height: 88%;
+    background-size: calc(100%)calc(100%); 
+}
+.acomodar{
+    height: 25%;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+.cont_doctores .plus{
+    background-image: url(../Img/plus.png);
+    width: 70%;
+    height:35%;
+    background-size: calc(100%)calc(100%); 
+}
+.cont_letras{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.cont_letras h1{
+    color:white;
+    height: 25%;
+    width: 100%;
+    font-size: 275%;
+    display: flex;
+    align-items: end;
+    font-weight: lighter;
+}
+.acomo{
+    display: flex;
+    align-items: end;
+    color:white;
+    font-size: 150%;
+    height: 25%;
+    width: 96%;
+    
+}
+.cont_letras .acomo p{
+    display: flex;
+    color:white;
+    width: 50%;
+}
+.cont_boton{
+    height: 18%;
+    display: flex;
+    align-items: end;
+    width: 96%;
+}
+.organizar{
+    display: flex;
+    width: 45%;
+    height: 50%;
+    justify-content: space-between;
+}
+.boton{
+    width: 43%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EEEFF2;
+    border-radius: 10px;
+    font-size: 126%;
+}
+
+/* ----------profesionales-------*/
+
+.box{
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+.box h1{
+    height: 40%;
+}
+.box p{
+    font-size: 125%;
+    width: 87%;
+}
+
+/* slide profesiones */
+.section1{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 58%;
+}
+.Slide1{
+    
+    display: flex;
+    height: 90%;
+    width: 68%;
+}
+
+
+.contain_slider {
+    flex: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.contain_slider h1{
+    width: 50%;
+    height: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 180%;
+}
+.cont_arreglar{
+    flex: none;
+    display: flex;
+    width: 100%;
+    height: 90%;
+}
+.container_letras{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 49%;
+}
+
+.parrafo_1,.parrafo_2{
+    font-size: 120%;
+    height: 70%;  
+}
+.container_letras .flechas {
+   height: 20%;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+    align-items: end;
+}
+.flecha_unido{
+    display: flex;
+    width: 40%;
+    height: 50%;
+    justify-content: space-between;
+}
+.flecha_unido button{
+    width: 45%;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+i{
+    font-size:150% ;
+}
+#derecha{
+    background-color: #dedede;
+}
+.container_boxes{
+    height: 90%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+}
+.container_boxes .caja1{
+    display: flex;
+    height:50%;
+    width: 90%;
+    
+}
+.container_boxes .caja2{
+    display: flex;
+    height: 50%;
+    width: 90%;
+    justify-content: end;
+}
+.caja1 .box1{
+    width: 49%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #23DA06;
+    border-radius: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border: none;
+}
+.caja1 .box1 i{
+    width: 55%;
+    height:65%;
+    background-image: url(../Img/medicina1.png);
+    background-size: calc(100%)calc(100%); 
+}
+.caja1 .box1 p{
+  height: 20%;
+  display:flex;
+  align-items: end;
+  color: white;
+}
+.caja2 .box2{
+    border: 3px solid #23DA06;;
+    width: 49%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.caja2 .box2 i{
+    width: 55%;
+    height:65%;
+    background-image: url(../Img/diente1.png);
+    background-size: calc(100%)calc(100%); 
+}
+.caja2 .box2 p{
+    height: 20%;
+    display:flex;
+    align-items: end;
+  }
+  /* ----------------------- cambio de slider odontologia y cajas de imagenes---------------------*/
+
+.container_boxes .caja1_2{
+    display: flex;
+    height:45%;
+    width: 90%;
+}
+.container_boxes .caja2_2{
+    display: flex;
+    height: 45%;
+    width: 90%;
+    justify-content: end;
+}
+.caja1_2 .box1_2{
+    width: 49%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border: none;
+    border: 3px solid #23DA06;
+}
+.caja1_2 .box1_2 i{
+    width: 55%;
+    height:65%;
+    background-image: url(../Img/medicina2.png);
+    background-size: calc(100%)calc(100%); 
+}
+.caja1_2 .box1_2 p{
+  height: 20%;
+  display:flex;
+  align-items: end;
+  
+}
+.caja2_2 .box2_2{
+    background-color: #23DA06;
+    width: 49%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.caja2_2 .box2_2 i{
+    width: 55%;
+    height:65%;
+    background-image: url(../Img/diente2.png);
+    background-size: calc(100%)calc(100%); 
+}
+.caja2_2 .box2_2 p{
+    height: 20%;
+    display:flex;
+    align-items: end;
+    color: white;
+
+  }
+  
+  /* -------------------Mision  y vision --------------*/
+  .section3{
+    height: 82%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+  }
+  .subcontainer{
+    width: 68%;
+    height: 93%;
+    display: flex;
+    flex-direction: column;
+  }
+.mision{
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+.sub_mision{
+    height: 100%;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+.mision h1{
+    height: 20%;
+    width: 100%;
+    text-align: center;
+    font-size: 175%;
+}
+.cont_info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: #EEEFF2;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.cont_info p{
+    width: 90%;
+    height: 82%;
+    font-size: 120%;
+    display: flex;
+}
+.cont-img{
+    width: 57%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.diana{
+    width: 48%;
+    height: 69%;
+    background-image: url(../Img/diana.png);
+    background-size: calc(100%)calc(100%); 
+}
+.vision{
+    height: 50%;
+    display: flex;
+}
+.cont-img2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.number_one{
+    width: 38%;
+    height: 60%;
+    background-image: url(../Img/one.png);
+    background-size: calc(100%)calc(100%); 
+}
+.subvision{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.subvision h1{
+    height: 20%;
+    width: 100%;
+    text-align: center;
+    font-size: 175%;
+}
+.cont_infovision{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    height: 100%;
+    width: 100%;
+}
+.cont_infovision p{
+    width: 90%;
+    height: 82%;
+    font-size: 120%;
+    display: flex;
+}
+/* Descripcion final del contenido*/
+.final{
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.final p{
+    width: 80%;
+    font-size: 126%;
+}
+/*FOOTER*/
+#footer{
+    height: 43%;
+    background-color: #E7EAEB;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.foo1{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    justify-content: space-between;
+    font-size: 130%;
+}
+.map{
+    width: 70%;
+    height: 50%;
+    background-color: grey;
+}
+#gmap_canvas{
+    height: 100%;
+    width: 100%;
+}
+.foo2{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    align-items: flex-start;
+    font-size: 130%; 
+}
+
+.ocultar_title{
+    display: none;
+}
+/*Formulario iniciar sesion*/
+
+.modal{
+    top: 0;
+    display: flex;
+    position: absolute;
+    height: 100%;
+    width: 99.9%;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+}
+.container{
+    width: 28%;
+    height: 60%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+    0 10px 10px rgba(0,0,0,0.22);
+    background-color: rgb(255, 255, 255);
+}
+.form_sesion{
+    height: 90%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between ;
+    align-items: center;
+}
+.se_text{
+    width: 100%;
+    color: #333733;
+    border-left: 5px solid #333733;
+    font-size: 130%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h2{
+    width: 90%;
+}
+.se_text, a{
+cursor: pointer;
+}.form_sesion input{
+    height:15%;
+    width: 100%;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    background-color: #E4E4E4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+input::placeholder{
+    width: 100%;
+    font-size: 120%;
+    text-align: center;
+}
+
+.boto{
+    height: 13%;
+    width: 100%;
+    color: white;
+    font-size: 110%;
+    font-weight: bold;
+    border-radius: 7px ;
+    background-color: #333733;
+    cursor: pointer;
+    
+}
+.boto:hover{
+    background-color: white;
+    color: #333733;
+    border: 2px solid black;
+}
+#botosesion{
+    width: 80%;
+    height: 10%;
+    font-size: 110%;
+    font-weight: bold;
+    border-radius: 7px ;
+    background-color: #333733;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+
+#botosesion:hover{
+    background-color: white;
+    color: #333733;
+    border:2px solid #333733;
+}
+.raya{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.raya p{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    color:#707270;
+}
+hr{
+    width: 80%;
+}
+
+#cerrarsesion{
+    top: 5.3rem;
+    right: 0.3rem;
+    height: 10%;
+    width: 10%;
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around ;
+    align-items: center;
+    background-color: #707270;
+    visibility: hidden;
+    border-radius: 10px;
+}
+#cerrarsesion button{
+    height: 40%;
+    width: 90%;
+}
+/*Creo el alerta de debe iniciar sesion*/
+.alerta_modal{
+    border:1px solid;
+    top: 0;
+    display: flex;
+    position: absolute;
+    height: 100%;
+    width: 99.9%;
+    visibility: hidden;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+}
+.cont-alert{
+    background-color: white;
+    width: 28%;
+    height: 28%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.icon{
+    width: 20%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon i{
+        font-size: 500%;
+        color: #0f7400;
+}
+.mensaje{
+    height: 25%;
+    font-size: 130%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #333733;
+}
+.cont-alert button{
+    width: 18%;
+    height: 18%;
+    background-color:#23DA06;
+    border-radius: 5px; 
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+/*DISEÑO MOVIL */
+@media screen and (max-width:436px){
+
+    /* Todo el header */
+    header nav{
+        top: 0;
+        position: sticky;
+        
+        z-index: 10;
+        background: white;
+    }
+    .cont-logo_name{
+        width: 70%;
+    }
+    .logo{
+        width: 100%;
+    }
+    .logo>i{
+        width: 20%;
+        height: 64%;
+    }
+    .logo>p{
+        width: 72%;
+    }
+
+    label {
+        display: flex;
+        width: 25%;
+        height: 100%;
+        justify-content: end;
+        align-items: center;
+        font-size: 170%;
+    }   
+    label i{
+        font-size: 130%;
+    }
+    .opciones{
+        position: absolute;
+        flex-direction: column;
+        justify-content: start;
+        align-items: end;
+        background-color: #E7EAEB;
+        visibility: hidden;
+        display: none;
+        z-index: 1;
+        height: 100%;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 29px 0px;
+    }
+    .opcion1{
+        width: 100%;
+        height: 8%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #close{
+        height: 10%;
+        width: 25%;
+        display: flex;
+        justify-content: left;
+        font-size: 180%;
+    }
+    #check:checked ~ .opciones {
+        visibility: visible;
+        display: flex;
+        right: 0;
+        }
+    
+    .container_verde{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .cont_letras{
+        width: 80%;
+        
+        height: 50%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .opciones .sesion{
+        height: fit-content;
+        width: 100%;
+        height: 8%;
+
+    }
+    #cerrarsesion{
+        top: 18rem;
+        left: 14rem;
+        right: 15rem;
+        height: 15%;
+        width: 40%;
+        z-index: 2;
+    }
+    /* Sobre nuestros profesionales */
+    .box{
+        height: 40%;
+    }
+    
+    /**/
+
+    /*Sliders*/
+
+
+    .acomo{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .cont_letras .acomo p {
+        width: 100%;
+    }
+
+    .organizar{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .cont_doctores{
+        width: 80%;
+        height: 50%;
+        justify-content: center;
+    }
+
+ /* ------------- */
+    .box>h1{
+        display: flex;
+
+        text-align: center;
+        align-items: center;
+    }
+
+    /* Sliders */
+    .section1{
+        
+        height: 65%;
+    }
+
+    
+    .Slide1{
+        width: 90%;
+        
+        
+    }
+
+    .contain_slider{
+        
+        justify-content: space-around;
+    }
+
+    .contain_slider h1{
+
+        width: 100%;
+        font-size: 145%;
+        
+    }
+
+    .cont_arreglar{
+        
+        height: 80%;
+    }
+
+
+
+    .container_letras h1{
+        display: none;
+
+    }
+    
+    .container_letras {
+        width: 63%;
+       
+        height: 92%;
+    } 
+
+
+    
+    .cont_letras h1{
+        font-size: 170%;
+    }
+
+    .acomo p{
+        font-size: 90%;
+    }
+    .container_letras p{
+        font-size: 100%;    
+    } 
+    .parrafo_1{
+        height: 40%;
+        
+    }
+    .parrafo_2{
+        height: 30%;
+        
+    }
+    .container_letras .flechas{
+        
+        height: 30%;
+    }
+   
+    .container_boxes{
+        
+        justify-content: space-between;
+    }
+
+    .container_boxes .caja1{
+
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        height: 50%;
+        
+    }
+
+    .container_boxes .caja2{
+        
+        display: flex;
+        justify-content: end;
+        align-items: start;
+        width: 100%;
+        height: 48%;
+        
+    }
+    .caja1 .box1 {
+        margin-left: 5.5%;
+        
+        width: 80%;
+        height: 55%;  
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    .caja2 .box2 {
+        width: 80%;
+        height: 52%;  
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+
+    /**/
+
+
+    .container_boxes .caja1_2{
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        height: 50%;
+    }
+
+    .container_boxes .caja2_2{
+       
+        display: flex;
+        justify-content: end;
+        align-items: start;
+        width: 100%;
+        height: 48%;
+    }
+    .caja1_2 .box1_2 {
+        margin-left: 5.5%;
+        width: 80%;
+        height: 52%;  
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    .caja2_2 .box2_2{
+        width: 83%;
+        height: 55%;  
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+
+    /**/
+    .caja1 .box1 i{
+        width: 50%;
+        height:55%; 
+    }
+    .caja2 .box2 i{
+        width: 45%;
+        height:53%;
+    }
+    .container_letras .flechas{
+        
+        height: 20%;
+        align-items: center;
+    }
+    .flechas .flecha_unido{
+        width: 75%;
+        height: 33%;
+    }
+
+
+    /*seccion 3*/
+
+    .section3{
+        height: 100%;
+        
+
+    }
+    .subcontainer{
+        width: 90%;
+        height: 100%;
+        justify-content: space-between;
+    }
+    .mision{
+        border: 3px solid #23DA06;;
+       border-radius: 15px;
+        flex-direction: column;
+        height: 48%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    }
+
+    .sub_mision{
+        height: 50%;
+        width: 100%;
+        font-size: 100%;
+    }
+        .sub_mision h1{
+    
+    height: 30%;
+        }
+
+        .cont_info{
+            background: none;
+            box-shadow: none;
+        }
+    .cont_info p{
+        font-size: 100%;
+    }
+
+    .cont-img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        height: 40%;
+    }
+    .diana{
+        width: 40%;
+        height: 55%;
+    }
+
+
+    .vision{
+        border-radius: 15px;
+        height: 48%;
+        flex-direction: column-reverse;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    }
+    .cont-img2{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+    }
+    .number_one{
+        width: 40%;
+        height: 55%;
+    }
+
+    .subvision{
+        height: 100%;
+        width: 100%;
+        font-size: 100%;
+    }
+
+    .subvision h1{
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .cont_infovision {
+        font-size: 100%;
+        box-shadow: none;
+    }
+    .cont_infovision p{
+        font-size: 100%;
+    }
+    .container{
+        width: 80%;
+        height: 60%;
+    }
+}
