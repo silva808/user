@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medpriority ADMIN</title>
-    <link rel="stylesheet" href="../Css/admin3.css">
+    <link rel="stylesheet" href="../Css/admin8.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
@@ -347,7 +347,8 @@
             </div>
 
             <div class="datos_barra">
-                <p><?php echo htmlspecialchars($_SESSION['nombre']) ?></p>
+                <p>ADMIN</p>
+                <!-- <p><?php echo htmlspecialchars($_SESSION['nombre']) ?></p> -->
 
                 <div class="img_notificaion"></div>
     

@@ -16,16 +16,18 @@ body {
 
 .general_todo{
     height: 100%;
+    /* width: 100%; */
     display: flex;
     flex-direction: column;
     align-items:center;
     justify-content: space-around;
     /* border: 1px solid greenyellow; */
+    z-index: 0;
 }
 
 .conheader {
     /* border: 1px solid red; */
-    width: 90%;
+    width: 95%;
     height: 15%;
     display: flex;
     border-radius: 10px;
@@ -97,7 +99,7 @@ body {
 
 
 .congeneral {
-    width: 90%;
+    width: 95%;
     height: 80%;
     display: flex;
     /* border-radius: 10px; */
@@ -230,6 +232,7 @@ main {
 .contain_main{
     /* border: 1px solid fuchsia; */
     width: 100%;
+    /* width: calc(100% + 2px); */
     height: 100%; 
     flex: none;
     display: flex;
@@ -246,6 +249,8 @@ main {
     /* border: 1px solid blueviolet; */
     width: 98%;
     height: 15%;
+    margin-left: calc(2% - 3px);
+    margin-bottom: calc(3% - 13px);
     display: flex;
     border-radius: 10px;
     align-items: center;
@@ -285,6 +290,7 @@ main {
     /* border: 1px solid greenyellow; */
     width: 98%;
     height: 80%;
+    margin-left: calc(2% - 3px);
     display: flex;
     flex-direction: column;
     border-radius: 10px;
