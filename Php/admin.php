@@ -347,7 +347,7 @@
             </div>
 
             <div class="datos_barra">
-                <p>ADMIN</p>
+                <p><?php echo htmlspecialchars($_SESSION['nombre']) ?></p>
 
                 <div class="img_notificaion"></div>
     
@@ -367,7 +367,7 @@
                     <a href="#inicio">
                         <div class="con_imagen" id="icono"> <img src="../Img/casa.png" alt=""></div>
                     </a>
-                    <a href="#inicio">
+                    <a href="../index.php">
                         <div class="con_opcion">
                             <h4>Inicio</h4>
                         </div>
@@ -600,17 +600,6 @@
 
             <!--   contenedor main donde se recargaran los contenedores  -->
             <main>
-
-                    <div id="inicio" class="contain_main">
-                        <div class="cont_titulo">
-                            <p>Home</p>
-                        </div>
-                        
-                        <div class="cont_general_all">
-
-                            
-                        </div>
-                    </div>
 
                     <!-- ---------------REGISTRO MEDICOS---------------- -->
                     <div id="reg_med" class="contain_main">
@@ -896,11 +885,11 @@
                                 </div>
                                 <div class="cont_preguntas">
                                     <label for="fecha">Fecha:</label>
-                                    <input type="date" name="fecha_cita" disabled>
+                                    <input type="date" id="date" name="fecha_cita" min="<?php echo date('Y-m-d'); ?>" onchange="validateDate()" disabled>
                                 </div>
                                 <div class="cont_preguntas">
                                     <label for="hora_inicio">Hora de Inicio:</label>
-                                    <select name="hora_inicio" disabled>
+                                    <select name="hora_inicio" id="hora_rango1" disabled>
                                         <?php 
                                             $q_horas = "SELECT * FROM horarios";
                                             $sel = mysqli_query( $conn, $q_horas );
@@ -919,7 +908,7 @@
                                 </div>
                                 <div class="cont_preguntas">
                                     <label for="hora_final">Hora Final:</label>
-                                    <select name="hora_final" disabled>
+                                    <select name="hora_final" id="rango" disabled>
                                     <?php 
                                         $q_horas = "SELECT * FROM horarios";
                                         $sel = mysqli_query( $conn, $q_horas );
@@ -986,7 +975,7 @@
                                             <td> <?php echo $modalci['nombre'];?></td>
                                             <td> <?php echo $modalci['fecha'];?></td>
                                             <td> <?php echo $modalci['registro'];?></td>
-                                            <td> <?php echo $modalci['enombre'];?></td>
+                                            <td> <?php echo htmlspecialchars($modalci['enombre']);?></td>
                                             <td><button data-modal-target="#modalci_<?php echo $modalci['id_preagendamiento'];?>">Detalles</button></td>
                                             <td><button class="delete" id=delete data-user-id="<?php echo $modalci['id_preagendamiento'];?>" data-role='preagendamiento'>Eliminar</button></td>
                                         </tr>
@@ -1324,4 +1313,5 @@
 
 </body>
 <script src="../Js/Admin/sql8.js"></script>
+<script src="../Js/User/ajax.js"></script>
 </html>

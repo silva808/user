@@ -170,12 +170,26 @@ body {
 
 }
 h2{
-    font-size: 60%;
+    font-size: 70%;
 }
 h4{
-    font-size: 70%;
+    font-size: 80%;
+    display: flex;
+    width: 80%;
+    /* border: 1px solid; */
     /* justify-self: flex-end; */
 }
+
+.con_opcion{
+    width: 100%;
+    height: 100%;
+}
+.con_opcion>h4{
+    width: 100%;
+    height: 100%;
+    font-size: 90%;
+}
+
 .linecita{
     width: 50%;
     height: 30%;
@@ -413,6 +427,7 @@ table td{
     white-space: nowrap;
     padding: 8px;
     text-align: left;
+    /* border-bottom: 1px solid rgb(119, 118, 118); */
 }
 table tr{
     justify-content: center;
@@ -420,8 +435,19 @@ table tr{
     height: 30px;
 }
 
-tr:hover {
+tr:nth-child(even){
+    /* background-color: rgba(145, 142, 142, 0.068); */
     background-color: #dddddd3f; /* Light grey on hover */
+}
+
+tr:nth-child(odd){
+    /* background-color: white; */
+}
+
+tr:hover {
+    /* background-color: #dddddd3f; Light grey on hover */
+    background-color: rgba(95, 94, 94, 0.171);
+    z-index: 1;
 }
 
 table button{

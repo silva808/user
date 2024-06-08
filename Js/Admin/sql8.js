@@ -133,6 +133,18 @@ document.addEventListener('DOMContentLoaded', function() {
         return final;
     }
 
+    function validateDate() {
+        var inputDate = document.getElementById("date").value;
+        var today = new Date();
+        var selectedDate = new Date(inputDate);
+        
+        // Disable past dates
+        if (selectedDate < today) {
+            alert("Please select a future date.");
+            document.getElementById("date").value = "";
+        }
+    }
+
     var nananai = document.getElementById("cita-nueva");
     
     nananai.addEventListener("click", function() {
